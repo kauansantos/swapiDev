@@ -1,0 +1,12 @@
+source 'https://rubygems.org'
+
+gem 'allure-cucumber'
+gem 'cucumber', '~> 3'
+gem 'httparty'
+gem 'inifile'
+gem 'json_matchers'
+gem 'json-schema'
+gem 'json-schema-rspec'
+gem 'rspec'
+gem 'rspec-expectations'
+gem 'rspec-json_expectations'

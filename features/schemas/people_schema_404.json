@@ -1,0 +1,12 @@
+{
+  "description": "validar schema de status 404",
+  "type": "object",
+  "properties": {
+    "detail": {
+      "type": "string"
+    }
+  },
+  "required": [
+    "detail"
+  ]
+}

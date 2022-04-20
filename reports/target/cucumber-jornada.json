@@ -1,0 +1,375 @@
+[
+  {
+    "uri": "/home/kauan/Documentos/swapi_project/features/specs/people.feature",
+    "id": "fluxo-completo-de-validação-de-pessoas",
+    "keyword": "Funcionalidade",
+    "name": "Fluxo completo de validação de Pessoas",
+    "description": "  Eu como uma aplicação de validação\n  Quero receber informações sobre os atributos de Pessoas\n  Para que o meu conhecimento sobre os personagens de Star Wars aumente cada vez mais\n\n  Critérios de aceitação:\n  Todos os dados inputados devem ser válidos\n  Cada execução deverá retornar com código de retorno compatível com o especificado massa de testes\n  Os contratos dos endpoints devem ser consistidos\n  Gerar log das execuções para análise",
+    "line": 4,
+    "comments": [
+      {
+        "value": "#utf-8",
+        "line": 2
+      }
+    ],
+    "elements": [
+      {
+        "id": "fluxo-completo-de-validação-de-pessoas;realizando-consulta-de-dados-de-pessoas;;2",
+        "keyword": "Esquema do Cenário",
+        "name": "Realizando consulta de dados de Pessoas",
+        "description": "",
+        "line": 29,
+        "type": "scenario",
+        "tags": [
+          {
+            "name": "@teste_get_pessoas",
+            "line": 19
+          }
+        ],
+        "comments": [
+          {
+            "value": "##################################################################################################",
+            "line": 15
+          },
+          {
+            "value": "#   testes de Jornada GET Pessoas                                                                #",
+            "line": 16
+          },
+          {
+            "value": "##################################################################################################",
+            "line": 17
+          }
+        ],
+        "before": [
+          {
+            "output": [
+              "SWAPI DEV: 2022-04-20 11:05:41 -0300 - Iniciando teste"
+            ],
+            "match": {
+              "location": "features/hooks/hooks.rb:1"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 48022
+            }
+          }
+        ],
+        "steps": [
+          {
+            "keyword": "Dado ",
+            "name": "que eu acesse a aplicação swapi dev",
+            "line": 21,
+            "output": [
+              "\n Realizando acesso ao endereço swapi dev \n"
+            ],
+            "match": {
+              "location": "features/steps/people_steps.rb:1"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 447758
+            }
+          },
+          {
+            "keyword": "Quando ",
+            "name": "realizar a consulta GET para trazer os dados de \"C-3PO\"",
+            "line": 22,
+            "output": [
+              "\n Resposta GET People: {\"name\":\"C-3PO\",\"height\":\"167\",\"mass\":\"75\",\"hair_color\":\"n/a\",\"skin_color\":\"gold\",\"eye_color\":\"yellow\",\"birth_year\":\"112BBY\",\"gender\":\"n/a\",\"homeworld\":\"https://swapi.dev/api/planets/1/\",\"films\":[\"https://swapi.dev/api/films/1/\",\"https://swapi.dev/api/films/2/\",\"https://swapi.dev/api/films/3/\",\"https://swapi.dev/api/films/4/\",\"https://swapi.dev/api/films/5/\",\"https://swapi.dev/api/films/6/\"],\"species\":[\"https://swapi.dev/api/species/2/\"],\"vehicles\":[],\"starships\":[],\"created\":\"2014-12-10T15:10:51.357000Z\",\"edited\":\"2014-12-20T21:17:50.309000Z\",\"url\":\"https://swapi.dev/api/people/2/\"}, code: 200 \n"
+            ],
+            "match": {
+              "location": "features/steps/people_steps.rb:5"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1236793946
+            }
+          },
+          {
+            "keyword": "Então ",
+            "name": "deverá retonar os dados solicitados para a pessoa \"C-3PO\"",
+            "line": 23,
+            "output": [
+              "\n Pessoa verificada corretamente \n"
+            ],
+            "match": {
+              "location": "features/steps/people_steps.rb:9"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 5361751
+            }
+          },
+          {
+            "keyword": "E ",
+            "name": "deverá retonar o código 200",
+            "line": 24,
+            "output": [
+              "\n statusCode verificado corretamente \n"
+            ],
+            "match": {
+              "location": "features/steps/people_steps.rb:13"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1323108
+            }
+          },
+          {
+            "keyword": "E ",
+            "name": "realizar a validação do schema de resposta \"200\"",
+            "line": 25,
+            "output": [
+              "\n Realizado verificação de contrato, o contrato esperado era o people_schema_200 \n"
+            ],
+            "match": {
+              "location": "features/steps/people_steps.rb:17"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 13647901
+            }
+          }
+        ]
+      },
+      {
+        "id": "fluxo-completo-de-validação-de-pessoas;realizando-consulta-de-dados-de-pessoas;;3",
+        "keyword": "Esquema do Cenário",
+        "name": "Realizando consulta de dados de Pessoas",
+        "description": "",
+        "line": 30,
+        "type": "scenario",
+        "tags": [
+          {
+            "name": "@teste_get_pessoas",
+            "line": 19
+          }
+        ],
+        "comments": [
+          {
+            "value": "##################################################################################################",
+            "line": 15
+          },
+          {
+            "value": "#   testes de Jornada GET Pessoas                                                                #",
+            "line": 16
+          },
+          {
+            "value": "##################################################################################################",
+            "line": 17
+          }
+        ],
+        "before": [
+          {
+            "output": [
+              "SWAPI DEV: 2022-04-20 11:05:42 -0300 - Iniciando teste"
+            ],
+            "match": {
+              "location": "features/hooks/hooks.rb:1"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 57023
+            }
+          }
+        ],
+        "steps": [
+          {
+            "keyword": "Dado ",
+            "name": "que eu acesse a aplicação swapi dev",
+            "line": 21,
+            "output": [
+              "\n Realizando acesso ao endereço swapi dev \n"
+            ],
+            "match": {
+              "location": "features/steps/people_steps.rb:1"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1018244
+            }
+          },
+          {
+            "keyword": "Quando ",
+            "name": "realizar a consulta GET para trazer os dados de \"R2-D2\"",
+            "line": 22,
+            "output": [
+              "\n Resposta GET People: {\"name\":\"R2-D2\",\"height\":\"96\",\"mass\":\"32\",\"hair_color\":\"n/a\",\"skin_color\":\"white, blue\",\"eye_color\":\"red\",\"birth_year\":\"33BBY\",\"gender\":\"n/a\",\"homeworld\":\"https://swapi.dev/api/planets/8/\",\"films\":[\"https://swapi.dev/api/films/1/\",\"https://swapi.dev/api/films/2/\",\"https://swapi.dev/api/films/3/\",\"https://swapi.dev/api/films/4/\",\"https://swapi.dev/api/films/5/\",\"https://swapi.dev/api/films/6/\"],\"species\":[\"https://swapi.dev/api/species/2/\"],\"vehicles\":[],\"starships\":[],\"created\":\"2014-12-10T15:11:50.376000Z\",\"edited\":\"2014-12-20T21:17:50.311000Z\",\"url\":\"https://swapi.dev/api/people/3/\"}, code: 200 \n"
+            ],
+            "match": {
+              "location": "features/steps/people_steps.rb:5"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 2187553850
+            }
+          },
+          {
+            "keyword": "Então ",
+            "name": "deverá retonar os dados solicitados para a pessoa \"R2-D2\"",
+            "line": 23,
+            "output": [
+              "\n Pessoa verificada corretamente \n"
+            ],
+            "match": {
+              "location": "features/steps/people_steps.rb:9"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 2062794
+            }
+          },
+          {
+            "keyword": "E ",
+            "name": "deverá retonar o código 200",
+            "line": 24,
+            "output": [
+              "\n statusCode verificado corretamente \n"
+            ],
+            "match": {
+              "location": "features/steps/people_steps.rb:13"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1631884
+            }
+          },
+          {
+            "keyword": "E ",
+            "name": "realizar a validação do schema de resposta \"200\"",
+            "line": 25,
+            "output": [
+              "\n Realizado verificação de contrato, o contrato esperado era o people_schema_200 \n"
+            ],
+            "match": {
+              "location": "features/steps/people_steps.rb:17"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 9331131
+            }
+          }
+        ]
+      },
+      {
+        "id": "fluxo-completo-de-validação-de-pessoas;realizando-consulta-de-dados-de-pessoas;;4",
+        "keyword": "Esquema do Cenário",
+        "name": "Realizando consulta de dados de Pessoas",
+        "description": "",
+        "line": 31,
+        "type": "scenario",
+        "tags": [
+          {
+            "name": "@teste_get_pessoas",
+            "line": 19
+          }
+        ],
+        "comments": [
+          {
+            "value": "##################################################################################################",
+            "line": 15
+          },
+          {
+            "value": "#   testes de Jornada GET Pessoas                                                                #",
+            "line": 16
+          },
+          {
+            "value": "##################################################################################################",
+            "line": 17
+          }
+        ],
+        "before": [
+          {
+            "output": [
+              "SWAPI DEV: 2022-04-20 11:05:45 -0300 - Iniciando teste"
+            ],
+            "match": {
+              "location": "features/hooks/hooks.rb:1"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 76206
+            }
+          }
+        ],
+        "steps": [
+          {
+            "keyword": "Dado ",
+            "name": "que eu acesse a aplicação swapi dev",
+            "line": 21,
+            "output": [
+              "\n Realizando acesso ao endereço swapi dev \n"
+            ],
+            "match": {
+              "location": "features/steps/people_steps.rb:1"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 462148
+            }
+          },
+          {
+            "keyword": "Quando ",
+            "name": "realizar a consulta GET para trazer os dados de \"desconhecido\"",
+            "line": 22,
+            "output": [
+              "\n Resposta GET People: {\"detail\":\"Not found\"}, code: 404 \n"
+            ],
+            "match": {
+              "location": "features/steps/people_steps.rb:5"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1227526315
+            }
+          },
+          {
+            "keyword": "Então ",
+            "name": "deverá retonar os dados solicitados para a pessoa \"desconhecido\"",
+            "line": 23,
+            "output": [
+              "\n Pessoa desconhecida \n"
+            ],
+            "match": {
+              "location": "features/steps/people_steps.rb:9"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1335935
+            }
+          },
+          {
+            "keyword": "E ",
+            "name": "deverá retonar o código 404",
+            "line": 24,
+            "output": [
+              "\n statusCode verificado corretamente \n"
+            ],
+            "match": {
+              "location": "features/steps/people_steps.rb:13"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1535716
+            }
+          },
+          {
+            "keyword": "E ",
+            "name": "realizar a validação do schema de resposta \"404\"",
+            "line": 25,
+            "output": [
+              "\n Realizado verificação de contrato, o contrato esperado era o people_schema_404 \n"
+            ],
+            "match": {
+              "location": "features/steps/people_steps.rb:17"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 13594893
+            }
+          }
+        ]
+      }
+    ]
+  }
+]

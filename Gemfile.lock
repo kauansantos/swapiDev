@@ -1,0 +1,91 @@
+GEM
+  remote: https://rubygems.org/
+  specs:
+    addressable (2.7.0)
+      public_suffix (>= 2.0.2, < 5.0)
+    allure-cucumber (2.13.4)
+      allure-ruby-commons (= 2.13.4)
+      cucumber (~> 3.1)
+    allure-ruby-commons (2.13.4)
+      json (>= 1.8, < 3)
+      mime-types (~> 3.3)
+      require_all (>= 2, < 4)
+      uuid (~> 2.3)
+    backports (3.21.0)
+    builder (3.2.4)
+    cucumber (3.2.0)
+      builder (>= 2.1.2)
+      cucumber-core (~> 3.2.0)
+      cucumber-expressions (~> 6.0.1)
+      cucumber-wire (~> 0.0.1)
+      diff-lcs (~> 1.3)
+      gherkin (~> 5.1.0)
+      multi_json (>= 1.7.5, < 2.0)
+      multi_test (>= 0.1.2)
+    cucumber-core (3.2.1)
+      backports (>= 3.8.0)
+      cucumber-tag_expressions (~> 1.1.0)
+      gherkin (~> 5.0)
+    cucumber-expressions (6.0.1)
+    cucumber-tag_expressions (1.1.1)
+    cucumber-wire (0.0.1)
+    diff-lcs (1.4.4)
+    gherkin (5.1.0)
+    httparty (0.18.1)
+      mime-types (~> 3.0)
+      multi_xml (>= 0.5.2)
+    inifile (3.0.0)
+    json (2.5.1)
+    json-schema (2.8.1)
+      addressable (>= 2.4)
+    json-schema-rspec (0.0.4)
+      json-schema (~> 2.5)
+      rspec
+    json_matchers (0.11.1)
+      json_schema
+    json_schema (0.21.0)
+    macaddr (1.7.2)
+      systemu (~> 2.6.5)
+    mime-types (3.3.1)
+      mime-types-data (~> 3.2015)
+    mime-types-data (3.2021.0225)
+    multi_json (1.15.0)
+    multi_test (0.1.2)
+    multi_xml (0.6.0)
+    public_suffix (4.0.6)
+    require_all (3.0.0)
+    rspec (3.10.0)
+      rspec-core (~> 3.10.0)
+      rspec-expectations (~> 3.10.0)
+      rspec-mocks (~> 3.10.0)
+    rspec-core (3.10.1)
+      rspec-support (~> 3.10.0)
+    rspec-expectations (3.10.1)
+      diff-lcs (>= 1.2.0, < 2.0)
+      rspec-support (~> 3.10.0)
+    rspec-json_expectations (2.2.0)
+    rspec-mocks (3.10.2)
+      diff-lcs (>= 1.2.0, < 2.0)
+      rspec-support (~> 3.10.0)
+    rspec-support (3.10.2)
+    systemu (2.6.5)
+    uuid (2.3.9)
+      macaddr (~> 1.0)
+
+PLATFORMS
+  ruby
+
+DEPENDENCIES
+  allure-cucumber
+  cucumber (~> 3)
+  httparty
+  inifile
+  json-schema
+  json-schema-rspec
+  json_matchers
+  rspec
+  rspec-expectations
+  rspec-json_expectations
+
+BUNDLED WITH
+   2.1.4

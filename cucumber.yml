@@ -1,0 +1,8 @@
+# ## YAML Templates
+default: -p pretty -p ns -p co -p format_allure -p format_json -p format_html
+ns: --no-source
+pretty: --format pretty
+co: --color
+format_json: -p pretty --format json --out=reports/target/cucumber-jornada.json
+format_html: -p pretty --format html --out=reports/html/cucumber-jornada.html
+format_allure: --format AllureCucumber::CucumberFormatter --out reports/allure-results
